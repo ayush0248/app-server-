@@ -1,8 +1,8 @@
-import mongoose, { schema } from "mongoose";
+import mongoose, { Schema } from "mongoose";
 
-const userSchema = new mongoose.Schema({
-    phone: {type:string, required:true, unique:true},
-    adress: {type:string},
+const userSchema = new Schema({
+    phone: { type: String, required: true, unique: true},
+    adress: {type: String},
     createdAt: {type:Date, default:Date.now},
     updatedAt: {type:Date, default:Date.now},
 });
